@@ -1,71 +1,32 @@
-## Foundry
+# Title Insurance Protocol
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+Title insurance can protect you if someone later sues and says they have a claim against the home from before you purchased it. 
 
-Foundry consists of:
+Legal claims could come from a previous owner's failure to pay taxes, or from contractors who say they were not paid for work done on the home before you purchased it.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+It is 20 billion market in the US.
 
-## Documentation
+The decentralized protocol that can bring the following advantages:
 
-https://book.getfoundry.sh/
+1. Decentralization and Trust
+2. Reduced Costs
+3. Transparency
+4. Automated Processes
+5. Profit Sharing
 
-## Usage
+According to the American Land Title Association (ALTA), title insurance companies paid out about 4-5% of their total premiums in claims in recent years leading up to 2022. This is a sharp contrast to other property-casualty insurance lines, which may have a payout rate upwards of 80%.
 
-### Build
+This low claims rate is because the bulk of a title company's work and costs are in preventing claims in the first place. This is achieved through a thorough title search and examination to resolve potential issues before the policy is issued.
 
-```shell
-$ forge build
-```
+Roughly speaking, for every dollar spent on title insurance:
 
-### Test
+* 70-80 cents go toward title search, examination, and curing title defects.
+* 4-5 cents are paid out in claims.
+* The remaining 15-25 cents covers business operations, which include general administrative costs, selling and marketing expenses, and profit.
 
-```shell
-$ forge test
-```
 
-### Format
+Below is the showcast of the main functionality.
 
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
-
-3209
 
 export PK1="0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80"
 export PK2="0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d"

@@ -120,14 +120,13 @@ cast send --private-key $PK2 $TI "payPremium(uint256)" 1 --value 0.01ether --rpc
 cast send --private-key $PK3 $TI "payPremium(uint256)" 2 --value 0.01ether --rpc-url http://127.0.0.1:8545/
 
 
-# payPremium(uint256 policyId)
-cast send --private-key $PK2 $TI "payPremium(uint256)" 1 --value 0.01ether --rpc-url http://127.0.0.1:8545/
-cast send --private-key $PK3 $TI "payPremium(uint256)" 2 --value 0.01ether --rpc-url http://127.0.0.1:8545/
-
-
 # withdrawInterest()
 cast send --private-key $PK3 $TI "withdrawInterest()" --rpc-url http://127.0.0.1:8545/
 # No interest so far
 
 # terminatePolicy(uint256 policyId)
-cast send --private-key $PK2 $TI "terminatePolicy(uint256)" 1 --rpc-url http://127.0.0.1:8545/
+cast send --private-key $PK1 $TI "terminatePolicy(uint256)" 1 --rpc-url http://127.0.0.1:8545/
+
+# withdrawInterest()
+cast send --private-key $PK3 $TI "withdrawInterest()" --rpc-url http://127.0.0.1:8545/
+# There is interest!

@@ -105,7 +105,7 @@ contract TitleInsurance is Ownable {
       address currentBacker = backersAddresses[i];
       // Ensure the backer's balance is not already zero to prevent underflow
       if (backersInitialBalance[currentBacker] > 0) {
-        backersInterestBalance[msg.sender] += (amount / currentBackersNumber);
+        backersInterestBalance[currentBacker] += (amount / currentBackersNumber);
       }
     }
   }

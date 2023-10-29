@@ -83,9 +83,9 @@ forge create --rpc-url http://localhost:8545 \
 export TITLE="0x5FbDB2315678afecb367f032d93F642f64180aa3"
 
 # safeMint(address to, string memory uri) Title
-cast send --private-key $PK1 $TITLE "safeMint(address,string)" $A1 hello --rpc-url http://127.0.0.1:8545/
-cast send --private-key $PK1 $TITLE "safeMint(address,string)" $A2 hello --rpc-url http://127.0.0.1:8545/
-cast send --private-key $PK1 $TITLE "safeMint(address,string)" $A3 hello --rpc-url http://127.0.0.1:8545/
+cast send --private-key $PK1 $TITLE "safeMint(address,string)" $A1 ipfs://... --rpc-url http://127.0.0.1:8545/
+cast send --private-key $PK1 $TITLE "safeMint(address,string)" $A2 ipfs://... --rpc-url http://127.0.0.1:8545/
+cast send --private-key $PK1 $TITLE "safeMint(address,string)" $A3 ipfs://... --rpc-url http://127.0.0.1:8545/
 
 forge create --rpc-url http://localhost:8545 \
              --constructor-args $INITIAL_OWNER \
@@ -95,9 +95,9 @@ forge create --rpc-url http://localhost:8545 \
 export PROPERTY="0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9"
 
 # safeMint(address to, string memory uri) Property
-cast send --private-key $PK1 $PROPERTY "safeMint(address,string)" $A1 hello --rpc-url http://127.0.0.1:8545/
-cast send --private-key $PK1 $PROPERTY "safeMint(address,string)" $A2 hello --rpc-url http://127.0.0.1:8545/
-cast send --private-key $PK1 $PROPERTY "safeMint(address,string)" $A3 hello --rpc-url http://127.0.0.1:8545/
+cast send --private-key $PK1 $PROPERTY "safeMint(address,string)" $A1 ipfs://... --rpc-url http://127.0.0.1:8545/
+cast send --private-key $PK1 $PROPERTY "safeMint(address,string)" $A2 ipfs://... --rpc-url http://127.0.0.1:8545/
+cast send --private-key $PK1 $PROPERTY "safeMint(address,string)" $A3 ipfs://... --rpc-url http://127.0.0.1:8545/
 
 
 forge create --rpc-url http://localhost:8545 \
@@ -122,7 +122,7 @@ cast send --private-key $PK3 $TI "payPremium(uint256)" 2 --value 0.01ether --rpc
 
 # withdrawInterest()
 cast send --private-key $PK3 $TI "withdrawInterest()" --rpc-url http://127.0.0.1:8545/
-# No interest so far
+# Error: No interest so far
 
 # terminatePolicy(uint256 policyId)
 cast send --private-key $PK1 $TI "terminatePolicy(uint256)" 1 --rpc-url http://127.0.0.1:8545/
